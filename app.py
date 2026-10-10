@@ -34,6 +34,8 @@ def home(request: Request):
 @app.get("/health")
 def health():
     return {
+        "success": True,
+        "message": "Service is running",
         "status": "healthy",
         "service": "SkillPredict AI",
         "version": "1.0"
